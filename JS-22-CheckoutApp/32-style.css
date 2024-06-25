@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+h1{
+    padding: 15px;
+    font-size: 3rem;
+    color: red;
+    /* font-style: ; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+#nav-left{
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+
+}
+.text{
+    color: orange;
+}
+i{
+    padding: 10px;
+    border-radius: 50%;
+}
+i:hover{
+    background-color: orange;
+    color: white;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="32-style.css">
+    <title>Checkout App</title>
+    
+</head>
+<body>
+    <h1>Checkout App</h1>
+    <div class="nav">
+        <div id="nav-left">My Cart</div>
+        <div id="nav-right">
+            <div class="text">Delete Products <i class="fa-regular fa-trash-can"></i></div>
+        </div>
+    </div>
+
+    <div class="myCard nav">
+        
+        <div class="store">
+            <div class="card card1">
+            <img src="./img/mac.jpg" alt="Macbook-M2Air">
+            <h3>Macbook M2 Air</h3>
+            <p style="color: red;">1474.99 $</p><p><del>1694.99 $</del></p>
+            <button class="eksi">-</button>
+            <input type="text">
+            <button class="arti">+</button>
+            <input type="number">
+            </div>
+            
+         
+            <div class="card card2">
+            <img src="./img/keyboard.jpg" alt="Macbook-M2Air">
+            <h3>Apple Keyboard</h3>
+            <p style="color: red;">185.99 $</p><p><del>199.99 $</del></p>
+            <button class="eksi">-</button>
+            <input type="text">
+            <button class="arti">+</button>
+            <input type="number">
+            </div>
+
+        
+            <div class="card card3">
+            <img src="./img/mouse.jpg" alt="Macbook-M2Air">
+            <h3>Apple Mouse</h3>
+            <p style="color: red;">145.99 $</p><p><del>179.99 $</del></p>
+            <button class="eksi">-</button>
+            <input type="text">
+            <button class="arti">+</button>
+            <input type="number">
+            </div>
+
+        </div>
+
+        <div class="select">
+            <h3 class="total">SELECTED PRODUCTS</h3>
+            <p>Finish Order</p>
+            <div>Shipping</div>
+            <div>Tax % 18</div>
+            <div>Total</div>
+        </div>
+
+    </div>
+
+    <script src="./32-app.js"></script>
+</body>
+</html>
