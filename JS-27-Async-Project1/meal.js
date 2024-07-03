@@ -44,3 +44,23 @@ let veri=  dizi.meals.filter((a)=>a.strMeal.toLowerCase().includes(e.target.valu
 
 showScreen(veri)
 };
+
+
+
+//!bayraklara tıklanınca o ülkenin yemeği gelsin
+
+//! NOT: api yi aldığımız sitedeki url nin endpoint i ülke vatandaşları şeklinde, örneğin Turkish. bizde bayraklara tıklanınca hazır img gelmişken ülke vatandaşı da gelmiş olsun diye id sine bunu yerleştirdik, ve fetch ile yazdığımız url nin sonuna bu id yi ekleyerek tıkladığımız ülkenin yemeklerinin gelmesini sağladık.
+
+
+document.querySelectorAll("img").forEach((a)=>
+
+  (a.onclick=()=>{
+  
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${a.id}`)
+      .then((res) => res.json())
+      .then((data) => showScreen(data.meals));
+  
+  
+    })
+  
+    );
